@@ -17,6 +17,7 @@ PASSWORD = "password"
 
 # Initialize Dash app with Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+# server = app.server
 app.title = "Global Diabetes Risk Insights"
 
 app.layout = dbc.Container([
