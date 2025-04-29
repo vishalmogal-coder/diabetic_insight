@@ -5,7 +5,7 @@ import pandas as pd
 import dash_bootstrap_components as dbc
 
 # Load your CSV
-file_path = 'diabetes_stages_europe_extended.csv'
+file_path = 'diabetes_stages_europe_expanded_with_sources22.csv'
 df = pd.read_csv(file_path)
 
 # List of columns to choose from (excluding Country)
