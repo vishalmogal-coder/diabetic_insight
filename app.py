@@ -17,7 +17,7 @@ PASSWORD = "password"
 
 # Initialize Dash app with Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-# server = app.server
+server = app.server
 app.title = "Global Diabetes Risk Insights"
 
 app.layout = dbc.Container([
@@ -106,4 +106,4 @@ def update_heatmap(selected_column):
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run_server(debug=True)
